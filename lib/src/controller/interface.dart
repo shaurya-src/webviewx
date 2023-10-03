@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:webviewx/src/utils/source_type.dart';
 import 'package:webviewx/src/utils/webview_content_model.dart';
 
@@ -99,10 +100,10 @@ abstract class WebViewXController<T> {
   Future<void> reload();
 
   /// Get scroll position on X axis
-  Future<int> getScrollX();
+  Future<double> getScrollX();
 
   /// Get scroll position on Y axis
-  Future<int> getScrollY();
+  Future<double> getScrollY();
 
   /// Scrolls by `x` on X axis and by `y` on Y axis
   Future<void> scrollBy(int x, int y);

@@ -199,14 +199,14 @@ class WebViewXController extends ChangeNotifier
 
   /// Get scroll position on X axis
   @override
-  Future<int> getScrollX() {
-    return Future.value(int.tryParse(connector["scrollX"].toString()));
+  Future<double> getScrollX() {
+    return Future.value(double.tryParse(connector["scrollX"].toString()));
   }
 
   /// Get scroll position on Y axis
   @override
-  Future<int> getScrollY() {
-    return Future.value(int.tryParse(connector["scrollY"].toString()));
+  Future<double> getScrollY() {
+    return Future.value(double.tryParse(connector["scrollY"].toString()));
   }
 
   /// Scrolls by `x` on X axis and by `y` on Y axis
